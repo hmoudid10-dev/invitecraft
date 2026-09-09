@@ -38,18 +38,18 @@ const Navbar = () => (
 
       <div className="hidden md:flex space-x-8 text-slate-600 font-medium">
         <Link to="/" className="hover:text-indigo-600 transition">
-          Home
+          Acceuil
         </Link>
 
         <Link to="/templates" className="hover:text-indigo-600 transition">
-          Templates
+          Modèles
         </Link>
 
         <Link
           to="/my-invitations"
           className="hover:text-indigo-600 transition"
         >
-          My Invitations
+          Mes invitations
         </Link>
       </div>
 
@@ -57,7 +57,7 @@ const Navbar = () => (
         to="/templates"
         className="bg-indigo-600 text-white px-5 py-2 rounded-full hover:bg-indigo-700 transition shadow-lg shadow-indigo-200"
       >
-        Create Now
+        Créer maintenant
       </Link>
     </div>
   </nav>
@@ -71,31 +71,30 @@ const Footer = () => (
       <div>
         <h3 className="text-xl font-bold mb-4">InviteCraft</h3>
         <p className="text-slate-500">
-          Premium digital invitations for every occasion. No design skills
-          required.
+          Créez de magnifiques invitations numériques pour toutes vos occasions, sans aucune compétence en design.
         </p>
       </div>
 
       <div>
-        <h4 className="font-semibold mb-4">Quick Links</h4>
+        <h4 className="font-semibold mb-4">Liens rapides</h4>
 
         <ul className="space-y-2 text-slate-500">
           <li>
-            <Link to="/templates">Templates</Link>
+            <Link to="/templates">Modéles</Link>
           </li>
 
           <li>
-            <Link to="/my-invitations">My Designs</Link>
+            <Link to="/my-invitations">Mes créations</Link>
           </li>
 
           <li>
-            <a href="#">Privacy Policy</a>
+            <a href="#">Politique de confidentialité</a>
           </li>
         </ul>
       </div>
 
       <div>
-        <h4 className="font-semibold mb-4">Follow Us</h4>
+        <h4 className="font-semibold mb-4">Suivez-nous</h4>
 
         <div className="flex space-x-4 text-slate-400">
           <Share2 className="cursor-pointer hover:text-indigo-600" />
@@ -116,20 +115,21 @@ const Home = () => (
     <section className="pt-20 pb-32 px-6">
       <div className="max-w-4xl mx-auto text-center">
         <h1 className="text-5xl md:text-7xl font-extrabold text-slate-900 mb-6 tracking-tight">
-          Create beautiful invitations{' '}
-          <span className="text-indigo-600">in minutes</span>
+          Créez de magnifiques invitations{' '}
+          <span className="text-indigo-600">en quelques minutes</span>
         </h1>
 
         <p className="text-xl text-slate-600 mb-10 max-w-2xl mx-auto">
-          Personalized, professional-grade digital invitations for birthdays,
-          weddings, and more. Download as high-quality images ready to share.
+           Créez facilement des invitations personnalisées pour vos anniversaires,
+           mariages, fêtes et autres événements. Personnalisez votre invitation et
+           téléchargez-la en haute qualité, prête à être partagée.
         </p>
 
         <Link
           to="/templates"
           className="inline-flex items-center space-x-2 bg-indigo-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-indigo-700 transition transform hover:scale-105 shadow-xl shadow-indigo-200"
         >
-          <span>Create an Invitation</span>
+          <span>Créer une invitation</span>
           <Plus size={20} />
         </Link>
       </div>
@@ -138,7 +138,7 @@ const Home = () => (
     <section className="bg-slate-50 py-24 px-6">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-16">
-          Templates for every occasion
+          Des modèles d'invitations pour chaque occasion
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
@@ -180,7 +180,7 @@ const TemplateGallery = () => {
         <div>
           <h1 className="text-4xl font-bold mb-2">Select a Template</h1>
           <p className="text-slate-500">
-            Pick a starting point for your event
+            Choisissez un modèle pour commencer à créer votre invitation.
           </p>
         </div>
       </div>
@@ -219,7 +219,7 @@ const TemplateGallery = () => {
 
             <div className="p-4 bg-white flex justify-between items-center">
               <span className="font-medium text-slate-700">
-                Use Template
+                Utiliser ce modèle
               </span>
 
               <Plus size={18} className="text-indigo-600" />
